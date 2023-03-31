@@ -1,0 +1,30 @@
+.about-card-logo {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F0F0;
+  border-radius: 30px;
+  margin: 0px auto;
+  padding: 40px 30px;
+}
+
+.about-card-logo div {
+  display: flex;
+  justify-content: center;
+}
+
+.about-card-logo div img {
+  width: 167px;
+  height: 120px;
+}
+
+.about-card-logo h1 {
+  white-space: nowrap;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about-card-logo h2 {
+  font-size: 1.25;
+  text-align: center;
+}

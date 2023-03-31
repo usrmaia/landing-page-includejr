@@ -1,0 +1,14 @@
+.services {
+  background-color: white;
+}
+
+.services h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.services .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

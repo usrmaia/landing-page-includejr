@@ -1,0 +1,61 @@
+.budget-form .tutorial-form {
+  background-color: #F25221B2;
+}
+
+.budget-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.budget-form form .title-form {
+  text-align: center;
+}
+
+.budget-form form .form-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.budget-form form .form-form .first-part-form, .budget-form form .form-form .second-part-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px;
+}
+
+.budget-form form .form-form .first-part-form label, .budget-form form .form-form .second-part-form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.budget-form form .form-form .first-part-form label input, .budget-form form .form-form .second-part-form label input, .budget-form form .form-form .second-part-form label textarea, .budget-form form .form-form .second-part-form label select, .budget-form form .form-form .second-part-form button {
+  width: 420px;
+  height: 30px;
+
+  margin-bottom: 20px;
+  padding: 5px;
+
+  background-color: #F2522166;
+  color: black;
+  opacity: .8;
+  border-radius: 20px;
+  border-style: none;
+  border-color: antiquewhite;
+}
+
+.budget-form form .form-form .second-part-form label textarea {
+  height: 100px;
+}
+
+.budget-form form .form-form .second-part-form label select {
+  height: 70px;
+}
+
+.budget-form form .form-form .second-part-form button {
+  background-color: black;
+  opacity: 1;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: inherit;
+}

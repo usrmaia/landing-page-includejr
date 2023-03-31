@@ -1,0 +1,29 @@
+.about-card-list {
+  flex-direction: row;
+  background-color: #F0F0F0;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.about-card-list h1, .about-card-list p {
+  color: black;
+}
+
+.about-card-list h1 strong, .about-card-list p strong{
+  color: #F25221;
+}
+
+.about-card-list h1 {
+  font-size: 1.375rem;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.about-card-list ul {
+  margin: 0px;
+}
+
+.about-card-list ul li p {
+  font-size: 1.25rem;
+  margin: 0px;
+}

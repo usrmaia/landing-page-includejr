@@ -1,0 +1,7 @@
+.benefits {
+  background-color: #F25221;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

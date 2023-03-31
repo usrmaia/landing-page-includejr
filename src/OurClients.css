@@ -1,0 +1,19 @@
+.our-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-clients h1 {
+}
+
+.our-clients .clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.our-clients .clients img {
+  margin: 30px 25px;
+  width: 150px;
+  height: 150px;
+}

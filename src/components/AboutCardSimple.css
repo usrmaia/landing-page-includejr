@@ -1,0 +1,26 @@
+.about-card-simple {
+  margin-bottom: 20px;
+  flex-direction: row;
+  background-color: #F0F0F0;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.about-card-simple h1, .about-card-simple p {
+  color: black;
+}
+
+.about-card-simple h1 strong, .about-card-simple p strong{
+  color: #F25221;
+}
+
+.about-card-simple h1 {
+  font-size: 1.375rem;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.about-card-simple p {
+  font-size: 1.25rem;
+  margin: 0px;
+}

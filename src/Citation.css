@@ -1,0 +1,28 @@
+.citation {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.citation img {
+  width: 120px;
+  height: 120px;
+
+  margin: auto 50px;
+}
+
+.citation div {
+  color: white;
+  margin: 25px 30px;
+}
+
+.citation div p {
+  text-align: justify;
+}
+
+
+.citation div span {
+  display: flex;
+  justify-content: flex-end;
+}
