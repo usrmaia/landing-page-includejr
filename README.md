@@ -1,4 +1,4 @@
-# landing-page-includejr [![Pato Dançando](./assets/icons/pato.gif)](./assets/icons/pato.gif)
+# [landing-page-includejr](./frontend/public/index.html) [![Pato Dançando](./assets/icons/pato.gif)](./assets/icons/pato.gif)
 ## Desafio do processo seletivo Include Jr. 2023.1 
 Desenvolver uma página com base no protótipo.
 ## Tecnologias usadas
