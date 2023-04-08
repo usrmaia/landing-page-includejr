@@ -1,0 +1,27 @@
+.font-forum {
+  font-family: 'Forum', cursive;
+}
+
+.font-convergence {
+  font-family: 'Convergence', sans-serif;
+}
+
+@font-face {
+  font-family: 'Book Antiqua';
+  src: url('./assets/fonts/book-antiqua.ttf') format('truetype');
+}
+
+.font-book-antiqua {
+  font-family: 'Book Antiqua', sans-serif;
+}
+
+.animation-links:hover {
+  color: #DA562A;
+  transition: color 0.2s ease-in-out;
+}
+
+.animation-button:hover {
+  color: #DA562A;
+  background-color: black;
+  transition: color 0.2s ease-in-out;
+}
