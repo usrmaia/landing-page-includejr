@@ -3,7 +3,7 @@
 1. npx express-generator --no-view --git backend
 2. cd backend
 3. npm install --save @sendgrid/mail
-4. set SENDGRID_API_KEY=YOUR_API_KEY
+4. setar chave da API em KeySendGrid.js
 5. npm start
 ## Frontend
 1. npx create-react-app frontend

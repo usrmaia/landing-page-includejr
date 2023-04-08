@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# landing-page-includejr [![Pato Dançando](./assets/icons/pato.gif)](./assets/icons/pato.gif)
+## Desafio do processo seletivo Include Jr. 2023.1 
+Desenvolver uma página com base no protótipo.
+## Tecnologias usadas
+| [![HTML5](https://img.icons8.com/color/64/null/html-5--v1.png)](https://www.w3schools.com/html/) | [![CSS](https://img.icons8.com/color/64/null/css3.png)](https://www.w3schools.com/css/default.asp) | [![JavaScript](https://img.icons8.com/fluency/64/000000/javascript.png)](https://www.w3schools.com/js/default.asp) | [![React](https://img.icons8.com/plasticine/64/000000/react.png)](https://react.dev/) | [![NodeJS](https://img.icons8.com/fluency/64/null/node-js.png)](https://nodejs.org/en) | [![SendGridAPI](./assets/icons/send-grid.png)](https://sendgrid.com/) | [![Google Maps](https://img.icons8.com/color/64/null/google-maps.png)](https://www.google.com.br/maps/) | [![Insomnia](./assets/icons/insomnia.png)](https://insomnia.rest/) | [![Google Fonts](./assets/icons/google-fonts.png)](https://fonts.google.com/) | 
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:| 
+| HTML5 | CSS3 | JS | React | NodeJS | SendGrid | Maps | Insomnia | Fonts |
+## O que é SendGrid?
+Uma API de e-mail. Com ele, pode-se enviar emails com o serviço SMTP (sem a necessidade de servidores). Além disso, é possivel criar e-mails com código HTML.
+![](./assets/img/Captura%20de%20tela%20-%20form%20frontend.png)
+```
+const sgMail = require("@sendgrid/mail");
+sgMail.setApiKey(key);
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+const msg = {
+  to: "srmaia.dev@gmail.com",
+  from: "srmaia.dev@gmail.com",
+  subject: "Cliente acaba de pedir orçamento!",
+  text: "Cliente acaba de pedir orçamento!",
+  html: `
+    <h1>Novo Serviço</h1>
+    <p><strong>Nome: </strong>${messageHTML.Nome}</p>
+    <p><strong>Telefone: </strong>${messageHTML.Telefone}</p>
+    <p><strong>Email: </strong>${messageHTML.Email}</p>
+    <p><strong>Cidade: </strong>${messageHTML.Cidade}</p>
+    <p><strong>CEP: </strong>${messageHTML.CEP}</p>
+    <p><strong>Ramo: </strong>${messageHTML.Ramo}</p>
+    <p><strong>Detalhe: </strong>${messageHTML.Detalhes}</p>
+    <p><strong>Serviços: </strong>${messageHTML.Servicos}</p>
+  `,
+};
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+sgMail.send(msg)
+  .then(() => console.log("Email sent"))
+  .catch((error) => console.error("Email error", error)); 
+```
+![](./assets/img/Captura%20de%20tela%20-%20email%20sendgrid.png)
+## Integração com Google Maps
+1. Enter no site [Google Maps](https://www.google.com.br/maps/);
+2. Selecione a localização desezada;
+3. No menu hamburguer, selecione 'Compartilhar ou incorporar mapa' -> 'Incorporar um mapa' -> 'COPIAR HTML'.
